@@ -1,0 +1,136 @@
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.team-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.team-select  label {
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.team-select select {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    background: transparent;
+}
+.team-select>div {
+    width: 215px;
+    display: flex;
+    align-items: center;
+}
+.admin-button {
+    background: rgb(98,77,227);
+    background: linear-gradient(90deg, rgba(98,77,227,1) 0%, rgba(54,42,125,1) 100%);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-three {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.top-three div {
+    text-align: center;
+    font-weight: 600;
+}
+
+.top-three img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+td{
+    font-size: 14px;
+    font-weight: 600;
+}
+tbody>tr:nth-child(odd) {
+    background-color: #F7F6FE;
+}
+
+.trophy {
+    font-size: 20px;
+}
+.top-three div img{
+    width: 100px;
+}
+.top-three div:nth-child(2) img{
+    width: 130px;
+}
+.aligntrophy{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: left;
+}
+@media (max-width: 600px) {
+    header {
+        font-size: 24px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar h3{
+        font-size: 16px;
+    }
+    .team-select {
+        align-items: end;
+        gap: 10px;
+    }
+    .container{
+        padding: 0;
+    }
+    /* .team-select select,
+    .admin-button {
+        width: 100%;
+    } */
+
+    table, th, td {
+        font-size: 14px;
+    }
+    .top-three div img {
+        width: 65px;
+    }
+    .top-three p {
+        font-size: 10px;
+    }
+    .top-three div:nth-child(2) img {
+        width: 90px;
+    }
+    .team-select>div {
+        width: 120px;
+        flex-direction: column;
+    }
+}

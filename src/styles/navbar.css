@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #4a4a8f;
+}
+
+.navbar img {
+    width: 60px;
+    margin-right: 10px;
+}
+.navbar h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    header {
+        font-size: 24px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar h3{
+        font-size: 16px;
+    }
+}
